@@ -807,10 +807,13 @@ h1 {
 }
 
 .music-btn span {
-  font-size: 0.9rem;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #ffffff;
   display: block;
   line-height: 1;
-  transform: translateY(2px);
+  transform: translateY(1px);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
 .autoplay-btn {

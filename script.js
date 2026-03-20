@@ -149,7 +149,7 @@ globalThis.addEventListener("load", () => {
         "aria-label",
         isPlaying ? "Music playing. Tap to pause." : "Music paused. Tap to play."
       );
-      musicBtn.innerHTML = isPlaying ? "<span>🔊</span>" : "<span>🎵</span>";
+      musicBtn.innerHTML = isPlaying ? "<span>⏸</span>" : "<span>♪</span>";
     };
 
     audio.volume = 0.5;
