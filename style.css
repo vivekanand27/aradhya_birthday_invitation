@@ -121,7 +121,7 @@ h1 {
 .title-photo {
   margin: 8px auto 10px;
   width: min(260px, 100%);
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   border-radius: 16px;
   overflow: hidden;
   border: 2px solid rgba(255, 255, 255, 0.9);
@@ -133,7 +133,7 @@ h1 {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 46%;
 }
 
 .theme-switcher {
@@ -674,6 +674,7 @@ h1 {
   .invite-text {
     order: 2;
     padding: 16px 12px;
+    margin-top: 20px;
   }
 
   .hero-photo {
@@ -724,7 +725,7 @@ h1 {
   }
 
   .title-photo img {
-    object-position: center 40%;
+    object-position: center 48%;
   }
 
   .theme-switcher {
