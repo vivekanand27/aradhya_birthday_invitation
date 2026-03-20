@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aradhya's 1st Birthday Invitation</title>
+    <meta
+      name="description"
+      content="Join us to celebrate Aradhya's 1st Birthday on 25 March 2026, 7 PM, at Shramodaya Campus, Bhopal."
+    />
+    <meta property="og:title" content="Aradhya's 1st Birthday Invitation" />
+    <meta
+      property="og:description"
+      content="You are warmly invited with your family to celebrate Aradhya's 1st Birthday."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/image-15.jpeg" />
+    <link rel="icon" type="image/jpeg" href="./img/image-15.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,25 +35,67 @@
 
         <div class="invite-layout">
           <div class="invite-text">
-            <p class="eyebrow">You are warmly invited with your family to celebrate</p>
-            <h1>Aradhya'S 1st Birthday</h1>
-            <p class="tagline">A little giggle, a lot of joy, and endless blessings.</p>
+            <p class="eyebrow reveal">You are warmly invited with your family to celebrate</p>
+            <h1 class="reveal">Aradhya'S 1st Birthday</h1>
+            <p class="tagline reveal">A little giggle, a lot of joy, and endless blessings.</p>
 
-            <div class="event-details">
+            <div class="theme-switcher reveal" aria-label="Theme switcher">
+              <button class="theme-btn active" data-theme="pastel" type="button">
+                Pastel
+              </button>
+              <button class="theme-btn" data-theme="royal" type="button">Royal</button>
+              <button class="theme-btn" data-theme="sunset" type="button">Sunset</button>
+            </div>
+
+            <div class="countdown-wrap reveal">
+              <div class="countdown-title">Countdown to Celebration</div>
+              <div id="countdown" class="countdown" aria-live="polite">
+                <div class="countdown-box"><span id="cdDays">0</span><small>Days</small></div>
+                <div class="countdown-box"><span id="cdHours">0</span><small>Hours</small></div>
+                <div class="countdown-box"><span id="cdMinutes">0</span><small>Minutes</small></div>
+                <div class="countdown-box"><span id="cdSeconds">0</span><small>Seconds</small></div>
+              </div>
+            </div>
+
+            <div class="event-details reveal">
               <p><span class="label">📅 Date</span><span class="value">25 March 2026</span></p>
               <p><span class="label">⏰ Time</span><span class="value">7 PM</span></p>
               <p>
                 <span class="label">📍 Venue</span>
                 <span class="value">1 BHK Side, Shramodaya Campus, Bhopal</span>
               </p>
-              <p><span class="label">📱 Contact</span><span class="value">7014981584 /8359806267</span></p>
+              <p><span class="label">📱 Contact</span><span class="value">8359806267</span></p>
                
             </div>
 
-            <p class="closing-line">Join us for a joyful evening!</p>
-            <p class="closing-line strong">Your presence will make it special 🎈♥️</p>
+            <div class="action-grid reveal">
+              <a
+                class="action-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://wa.me/918359806267?text=We%20will%20join%20Aradhya%27S%201st%20Birthday%20celebration%20on%2025%20March%202026%20at%207%20PM.%20Thank%20you%20for%20the%20invite%21"
+                >RSVP on WhatsApp</a
+              >
+              <a
+                class="action-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://maps.app.goo.gl/EkaTwREzfzoWGPge7"
+                >Open Location</a
+              >
+              <a
+                class="action-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aradhya%27S%201st%20Birthday&dates=20260325T133000Z/20260325T163000Z&details=You%20are%20warmly%20invited%20with%20your%20family%20to%20celebrate%20Aradhya%27S%201st%20Birthday.&location=1%20BHK%20Side%2C%20Shramodaya%20Campus%2C%20Bhopal"
+                >Add to Google Calendar</a
+              >
+            </div>
 
-            <div class="photo-strip" aria-label="Aradhya photo memories">
+            <p class="closing-line reveal">Join us for a joyful evening!</p>
+            <p class="closing-line strong reveal">Your presence will make it special 🎈♥️</p>
+
+            <div class="photo-strip reveal" aria-label="Aradhya photo memories">
               <div class="photo-tile">
                 <img src="./img/image-10.jpeg" alt="Aradhya in yellow dress" />
               </div>
@@ -65,7 +119,7 @@
 
           <div class="invite-visual">
             <img
-              class="hero-photo"
+              class="hero-photo reveal"
               src="./img/image-15.jpeg"
               alt="Aradhya smiling in birthday cap"
             />
@@ -87,16 +141,29 @@
             />
           </div>
         </div>
+
+        <p class="thank-note">
+          We look forward to celebrating with you!<br />
+          Thank you 🙏
+        </p>
       </section>
     </main>
 
     <script src="script.js"></script>
 
+    <button
+      id="autoplayBtn"
+      class="autoplay-btn"
+      type="button"
+      title="Music autoplay setting"
+    >
+      Auto: ON
+    </button>
     <button id="musicBtn" class="music-btn" type="button" aria-label="Toggle background music">
       <span>🎵</span>
     </button>
     <audio id="bgm" preload="auto" loop>
-      <source src="./assets/music.mp3" type="audio/mpeg" />
+      <source src="./assets/moodmode-happy-birthday-song-455067.mp3" type="audio/mpeg" />
     </audio>
   </body>
 </html>

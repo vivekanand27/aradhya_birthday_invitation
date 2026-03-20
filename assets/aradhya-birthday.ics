@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Aradhya Birthday Invite//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:aradhya-1st-birthday-20260325@invite.local
+DTSTAMP:20260301T120000Z
+DTSTART:20260325T133000Z
+DTEND:20260325T163000Z
+SUMMARY:Aradhya'S 1st Birthday
+DESCRIPTION:You are warmly invited with your family to celebrate Aradhya'S 1st Birthday.
+LOCATION:1 BHK Side\, Shramodaya Campus\, Bhopal
+END:VEVENT
+END:VCALENDAR
