@@ -94,10 +94,11 @@ body[data-theme="sunset"] {
 
 h1 {
   margin: 2px 0 0;
-  line-height: 1.05;
+  line-height: 1.08;
   font-size: clamp(2.4rem, 4.2vw, 3.4rem);
-  font-family: "Great Vibes", cursive;
-  font-weight: 500;
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  letter-spacing: 0.2px;
   color: var(--purple-900);
   text-align: center;
   animation: titleBreathe 5s ease-in-out infinite;
@@ -215,7 +216,7 @@ h1 {
   margin-right: auto;
 }
 
-.event-details p {
+.event-details > * {
   margin: 0;
   padding: 12px 16px;
   display: flex;
@@ -229,24 +230,26 @@ h1 {
   font-size: 1.08rem;
   line-height: 1.35;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-.event-details p:nth-child(1) {
+.event-details > *:nth-child(1) {
   animation: rowFloat 4.2s ease-in-out infinite;
   animation-delay: 0ms;
 }
 
-.event-details p:nth-child(2) {
+.event-details > *:nth-child(2) {
   animation: rowFloat 4.2s ease-in-out infinite;
   animation-delay: 220ms;
 }
 
-.event-details p:nth-child(3) {
+.event-details > *:nth-child(3) {
   animation: rowFloat 4.2s ease-in-out infinite;
   animation-delay: 440ms;
 }
 
-.event-details p:nth-child(4) {
+.event-details > *:nth-child(4) {
   animation: rowFloat 4.2s ease-in-out infinite;
   animation-delay: 660ms;
 }
@@ -256,6 +259,37 @@ h1 {
   font-weight: 700;
   font-size: 1.12rem;
   white-space: nowrap;
+}
+
+.venue-card {
+  padding-right: 52px;
+}
+
+.venue-map-link {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(89, 43, 143, 0.24);
+  background: rgba(255, 255, 255, 0.96);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 12px rgba(53, 21, 79, 0.14);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.venue-map-link:hover {
+  transform: translateY(-1px) scale(1.06);
+  box-shadow: 0 8px 16px rgba(53, 21, 79, 0.2);
+}
+
+.venue-map-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .value {
@@ -270,6 +304,7 @@ h1 {
   margin: 12px 0 0;
   font-size: 1.25rem;
   color: var(--purple-900);
+  text-align: center;
 }
 
 .closing-line.strong {
@@ -342,10 +377,11 @@ h1 {
 }
 
 .hero-overlay-title {
-  font-family: "Great Vibes", cursive;
+  font-family: "Allura", cursive;
   font-size: 1.52rem;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.2px;
 }
 
 .hero-overlay-meta {
@@ -494,7 +530,8 @@ h1 {
   border-radius: 4px;
   pointer-events: none;
   animation: drop linear forwards;
-  z-index: 10;
+  opacity: 0.55;
+  z-index: 1;
 }
 
 .balloon {
@@ -505,9 +542,9 @@ h1 {
   border-radius: 50% 50% 48% 48%;
   background: var(--balloon-color, #ff7ac8);
   box-shadow: inset -8px -8px 14px rgba(255, 255, 255, 0.25);
-  opacity: 0.8;
+  opacity: 0.34;
   pointer-events: none;
-  z-index: 9;
+  z-index: 0;
 }
 
 .balloon::before {
@@ -758,7 +795,7 @@ h1 {
     gap: 8px;
   }
 
-  .event-details p {
+  .event-details > * {
     flex-direction: column;
     align-items: center;
     gap: 5px;
@@ -769,6 +806,18 @@ h1 {
 
   .label {
     white-space: normal;
+  }
+
+  .venue-map-link {
+    top: 8px;
+    right: 9px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .venue-map-icon {
+    width: 16px;
+    height: 16px;
   }
 
   .value {
