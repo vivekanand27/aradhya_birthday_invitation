@@ -24,7 +24,7 @@
         <div class="invite-layout">
           <div class="invite-text">
             <p class="eyebrow">You are warmly invited with your family to celebrate</p>
-            <h1>Aradhya's 1st Birthday</h1>
+            <h1>Aradhya'S 1st Birthday</h1>
             <p class="tagline">A little giggle, a lot of joy, and endless blessings.</p>
 
             <div class="event-details">
@@ -34,17 +34,32 @@
                 <span class="label">📍 Venue</span>
                 <span class="value">1 BHK Side, Shramodaya Campus, Bhopal</span>
               </p>
-              <p><span class="label">📱 Contact</span><span class="value">7014981584</span></p>
+              <p><span class="label">📱 Contact</span><span class="value">7014981584 /8359806267</span></p>
+               
             </div>
 
             <p class="closing-line">Join us for a joyful evening!</p>
             <p class="closing-line strong">Your presence will make it special 🎈♥️</p>
 
             <div class="photo-strip" aria-label="Aradhya photo memories">
-              <img src="./img/image-13.jpeg" alt="Aradhya in yellow dress" />
-              <img src="./img/image-1.jpeg" alt="Aradhya cheerful portrait" />
-              <img src="./img/image-8.jpeg" alt="Aradhya close-up portrait" />
-              <img src="./img/image-14.jpeg" alt="Aradhya in winter wear" />
+              <div class="photo-tile">
+                <img src="./img/image-10.jpeg" alt="Aradhya in yellow dress" />
+              </div>
+              <div class="photo-tile">
+                <img
+                  src="./img/image-1.jpeg"
+                  alt="Aradhya cheerful portrait"
+                />
+              </div>
+              <div class="photo-tile">
+                <img src="./img/image-8.jpeg" alt="Aradhya close-up portrait" />
+              </div>
+              <div class="photo-tile">
+                <img
+                  src="./img/image-14.jpeg"
+                  alt="Aradhya in winter wear"
+                />
+              </div>
             </div>
           </div>
 
@@ -54,9 +69,15 @@
               src="./img/image-15.jpeg"
               alt="Aradhya smiling in birthday cap"
             />
+            <div class="hero-overlay" aria-hidden="true">
+              <div class="hero-overlay-inner">
+                <div class="hero-overlay-title">Aradhya&apos;S 1st Birthday</div>
+                <div class="hero-overlay-meta">25 March 2026 • 7 PM</div>
+              </div>
+            </div>
             <img
               class="float-photo photo-a"
-              src="./img/image-10.jpeg"
+              src="./img/image-13.jpeg"
               alt="Aradhya in winter cap smiling"
             />
             <img
@@ -70,5 +91,12 @@
     </main>
 
     <script src="script.js"></script>
+
+    <button id="musicBtn" class="music-btn" type="button" aria-label="Toggle background music">
+      <span>🎵</span>
+    </button>
+    <audio id="bgm" preload="auto" loop>
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
   </body>
 </html>
